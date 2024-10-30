@@ -1,5 +1,5 @@
 # UniversalRobot + OnRobot Eyes Guide
-Guide to using OnRobot Eyes with Universal Robot
+Guide til at bruge OnRobot Eyes til Universal Robot
 
 Det første vi starter med, er at tilslutte kameraet til robotten, i dette eksempel er der brugt en UR3e.
 Først åbnes pakken og kameraet installeres med de dertilhørende skruer. 
