@@ -81,4 +81,6 @@ Vi har i denne guide blot lavet en simpel kamera inspektion hvor DINT_Output_Reg
 
 ![image](https://github.com/user-attachments/assets/de2909fd-3d3c-4c4f-b819-490717ed00a5)
 
+Programmet i Universal Robots ser sådan ud: 
+![20241030_133156](https://github.com/user-attachments/assets/3feb8f4f-d8c1-4407-a1b0-336a9f71c9e9)
 
