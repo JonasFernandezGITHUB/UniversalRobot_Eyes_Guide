@@ -1,11 +1,12 @@
 # UniversalRobot + OnRobot Eyes Guide
 Guide to using OnRobot Eyes with Universal Robot
 
-## **Setup On-Robot-Eyes**
 Det første vi starter med, er at tilslutte kameraet til robotten, i dette eksempel er der brugt en UR3e.
 Først åbnes pakken og kameraet installeres med de dertilhørende skruer. 
 Boksen der følger med, ser således ud:
-![image](https://github.com/user-attachments/assets/45c14ffa-6b7b-417e-89d9-b9b7771c080a)
+![image](https://github.com/user-attachments/assets/cb846df7-551e-4473-b04d-34c7a591556b)
+
+
 Ved det grønne tilsluttes strømmen, med den tilhørende strømtilslutning. 
 USB kablet, skal sættes i det røde og derefter indsættes i On-Robot-Eyes på siden.
 Til at kommunikere, skal der sættes et ethernet kabel i den blå og den anden ende i switchen og fra switchen til robottens Ethernet indgang. 
@@ -14,14 +15,19 @@ I det lilla område sidder der 4 dip-switches. Hvis alle 4 peger nedad, betyder 
 Subnet (255.255.255.0).
 Vi går nu videre til hvordan installationen fortsættes i TeachPendant.
 Med i kassen til On-Robot-Eyes er der et USB-stik, dette indsættes i TeachPendant, herefter følger vi denne guide:
+
 ![image](https://github.com/user-attachments/assets/f8ec2a7e-c669-4a8f-a585-17e948574785)
+
 ![image](https://github.com/user-attachments/assets/668dadaf-68bb-4129-bcfa-0c3281eacf21)
+
 
 Nu skal vi konfigurere kameraet i URCaps, her følges guiden igen:
 !!!VIGTIGT!!!  Før der kan skabes en forbindelse er det vigtigt at alle fieldbusses er deaktiveret, disse findes under installations fanen og derefter fieldbus.
+
 ![image](https://github.com/user-attachments/assets/302566b3-a10b-40e3-94ce-fe48cdea9d8a)
 
 ![image](https://github.com/user-attachments/assets/440441df-35e2-4936-ae09-a533b5f9fc20)
+
 
 ![image](https://github.com/user-attachments/assets/04b3c1e7-4fab-4241-8249-a924a6bedfa2)
 
@@ -51,7 +57,6 @@ Nu skal vi konfigurere kameraet i URCaps, her følges guiden igen:
 
 ![image](https://github.com/user-attachments/assets/d86da1d6-cb94-479f-b76d-ae1d93a1b38d)
 
-
 ## **Opsætning i Control Expert**
 I topmenuen vælg “**Tools**” og “**DTM-browser**”
 I DTM-browser højre-klik på din PLC, vælg ”**Device Menu**”, ”**Additional Functions**”, ”**Add EDS to library**”. \
@@ -67,5 +72,13 @@ Højreklik på din PLC i DTM-browseren igen, og vælg ”**Add..**”. Tryk på 
 Dobbelt-klik på din PLC i DTM-browseren, og find din nyligt tilføjede Universal Robot Ip-adresse under ”**Address setting**”. Giv den en korrekt IP-adresse, og tryk ”**Apply**” \
 ![image](https://github.com/user-attachments/assets/733460ee-e408-4514-8fe5-26e055a7431b) 
 
-Din PLC burde nu være forbundet til Universal Robot via Ethernet/IP.
-Du kan evt. lave et animation table for at bekræfte kommunikationen, og hvilket data kommer hvorhen
+Din PLC burde nu være forbundet til Universal Robot via Ethernet/IP.\
+Du kan evt. lave et animation table for at bekræfte kommunikationen, og hvilket data kommer hvorhen\
+![image](https://github.com/user-attachments/assets/199bb501-43e1-4e33-9a35-49d09782f627)
+
+Vi har i denne guide blot lavet en simpel kamera inspektion hvor DINT_Output_Register_1 bliver sat til 1, hvis kameraet detekterer et korrekt element.\
+![image](https://github.com/user-attachments/assets/e1d93db5-0cea-4447-a2f1-a85f1c41ea0c)
+
+![image](https://github.com/user-attachments/assets/de2909fd-3d3c-4c4f-b819-490717ed00a5)
+
+
